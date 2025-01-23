@@ -117,12 +117,6 @@ body {
 }
 
 .main-wrapper {
-  /* position: absolute;
-  width: calc(100% - 8px);
-  min-width: 640px;
-  max-width: max(calc((100vh - 44px - 223px - 20px - 52px - 8px)* 16 / 9), 640px);
-  height: calc(100% - 8px);
-  min-height: 360px; */
   background-color: #80BCBD;
   position: relative;
   width: calc(100% - 8px);
@@ -130,7 +124,6 @@ body {
   max-width: max(calc((100vh - 44px - 223px - 20px - 52px - 8px) * 16 / 9), 640px); /* Ensure minimum width */
   height: calc((100vh - 44px - 223px - 20px - 52px - 8px)); /* Dynamically calculate height */
   min-height: 360px; 
-  aspect-ratio: 16 / 9;
   display: flex;
   align-items: center;
   justify-content: center;
