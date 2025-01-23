@@ -78,6 +78,7 @@ body {
 .row-1 {
   height: 52px;
   background-color: #f7ded0;
+  flex-shrink: 0;
 }
 
 .row-2 {
@@ -100,6 +101,7 @@ body {
   margin-top: 2px;
   background-color: #f7ded0;
   height: 241px;
+  flex-shrink: 0;
 }
 
 .wrapper {
@@ -117,12 +119,13 @@ body {
 }
 
 .main-wrapper {
+  --h: calc(100dvh - 347px);
   background-color: #80BCBD;
   position: relative;
   width: calc(100% - 8px);
   min-width: 640px;
-  max-width: max(calc((100vh - 44px - 223px - 20px - 52px - 8px) * 16 / 9), 640px); /* Ensure minimum width */
-  height: calc((100vh - 44px - 223px - 20px - 52px - 8px)); /* Dynamically calculate height */
+  max-width: max(calc(var(--h) * 16 / 9), 640px); /* Ensure minimum width */
+  height: var(--h); /* Dynamically calculate height */
   min-height: 360px; 
   display: flex;
   align-items: center;
