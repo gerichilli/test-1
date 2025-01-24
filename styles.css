@@ -119,20 +119,14 @@ body {
 }
 
 .main-wrapper {
-  /* --h: calc(100dvh - 347px);
-  position: relative;
-  width: calc(100% - 8px);
-  min-width: 640px;
-  max-width: max(calc(var(--h) * 16 / 9), 640px); Ensure minimum width
-  height: var(--h); Dynamically calculate height 
-  min-height: 360px; */
-  max-width: calc(100% - 8px);
   position: absolute;
-  flex-grow: 1;
-  background-color: #80BCBD;
+  max-width: calc(100% - 8px);
   min-width: 640px;
+  max-height: calc(100% - 8px);
   min-height: 360px;
+  flex-grow: 1;
   aspect-ratio: 16/9;
+  background-color: #80BCBD;
 }
 
 @media (orientation: landscape) {
