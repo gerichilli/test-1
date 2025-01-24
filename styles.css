@@ -126,6 +126,7 @@ body {
   max-width: max(calc(var(--h) * 16 / 9), 640px); Ensure minimum width
   height: var(--h); Dynamically calculate height 
   min-height: 360px; */
+  max-width: calc(100% - 8px);
   position: absolute;
   flex-grow: 1;
   background-color: #80BCBD;
