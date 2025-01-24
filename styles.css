@@ -119,17 +119,31 @@ body {
 }
 
 .main-wrapper {
-  --h: calc(100dvh - 347px);
-  background-color: #80BCBD;
+  /* --h: calc(100dvh - 347px);
   position: relative;
   width: calc(100% - 8px);
   min-width: 640px;
-  max-width: max(calc(var(--h) * 16 / 9), 640px); /* Ensure minimum width */
-  height: var(--h); /* Dynamically calculate height */
-  min-height: 360px; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: max(calc(var(--h) * 16 / 9), 640px); Ensure minimum width
+  height: var(--h); Dynamically calculate height 
+  min-height: 360px; */
+  position: absolute;
+  flex-grow: 1;
+  background-color: #80BCBD;
+  min-width: 640px;
+  min-height: 360px;
+  aspect-ratio: 16/9;
+}
+
+@media (orientation: landscape) {
+  .main-wrapper {
+    height: calc(100% - 8px);
+  }
+}
+
+@media (orientation: portrait) {
+  .main-wrapper {
+    width: calc(100% - 8px);
+  }
 }
 
 .top {
