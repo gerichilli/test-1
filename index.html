@@ -31,38 +31,5 @@
     </div>
   </div>
   <div class="info" id="info"></div>
-  <!-- <script>
-    const mainWrapper = document.getElementById("main-wrapper")
-    const mainImage = document.getElementById("main-image")
-
-    const mainWrapperWidth = mainWrapper.offsetWidth;
-    const mainImageWidth = mainImage.offsetWidth;
-
-    const EXPECTED_ASPECT_RATIO = (16 / 9).toFixed(2)
-
-    function printWidth(isClicked) {
-      const mainWrapperWidth = mainWrapper.offsetWidth;
-      const mainWrapperHeight = mainWrapper.offsetHeight;
-      const mainImageWidth = mainImage.offsetWidth;
-      const mainImageHeight = mainImage.offsetHeight;
-
-      document.getElementById("info").innerHTML = ""
-
-      const wrapperInfo = document.createElement("p")
-      wrapperInfo.textContent = `WRAPPER w=${mainWrapperWidth} h=${mainWrapperHeight} aspect-ratio=${(mainWrapperWidth / mainWrapperHeight).toFixed(2)} ${EXPECTED_ASPECT_RATIO}`
-      const imageInfo = document.createElement("p")
-      imageInfo.textContent = `IMAGE w=${mainImageWidth} h=${mainImageHeight} aspect-ratio=${(mainImageWidth / mainImageHeight).toFixed(2)} ${EXPECTED_ASPECT_RATIO}`
-
-      if(isClicked) {
-        document.getElementById("info").append('CLICKED')
-      }
-      document.getElementById("info").append(wrapperInfo)   
-      document.getElementById("info").append(imageInfo)  
-    }
-
-    printWidth();
-
-    mainWrapper.addEventListener('click', () =>  printWidth(true))
-  </script> -->
 </body>
 </html>
