@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Test Vh</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="header"></div>
   <div class="main">
@@ -21,7 +23,7 @@
                   <div class="top"></div>
                   <img src="image.png" alt="" class="main-image" id="main-image">
                 </div>
-              </div>  
+              </div>
             </div>
             <div class="row-3"></div>
           </div>
@@ -31,5 +33,32 @@
     </div>
   </div>
   <div class="info" id="info"></div>
+  <script>
+    const element = document.getElementById("main-wrapper")
+    let observer = null
+
+    function updateSize() {
+      const maxW = Math.floor(((window.innerHeight - 347) * 16) / 9);
+      const finalMaxW = Math.max(maxW, 640);
+
+      // ViewTouchOperationの現在の幅を取得
+      const curMaxW = Math.floor(element.getBoundingClientRect().width);
+
+      // 100vhとwindow.innerHeightが異なる場合のみmax-widthを更新
+      if (maxW !== curMaxW) {
+        element.style.maxWidth = `${maxW}px`
+      }
+    };
+
+    function setObserver() {
+      updateSize();
+
+      observer = new ResizeObserver(updateSize);
+      observer.observe(element);
+    }
+
+    setObserver()
+  </script>
 </body>
+
 </html>
