@@ -41,10 +41,8 @@
       const maxW = Math.floor(((window.innerHeight - 347) * 16) / 9);
       const finalMaxW = Math.max(maxW, 640);
 
-      // ViewTouchOperationの現在の幅を取得
       const curMaxW = Math.floor(element.getBoundingClientRect().width);
 
-      // 100vhとwindow.innerHeightが異なる場合のみmax-widthを更新
       if (maxW !== curMaxW) {
         element.style.maxWidth = `${maxW}px`
       }
