@@ -121,9 +121,9 @@ body {
 .main-wrapper {
   position: relative;
   height: calc(100% - 8px);
-  width: auto;
+  width: fit-content;
   min-width: 640px;
-  max-width: max(calc((100dvh - 44px - 223px - 20px - 52px - 8px) * 16 / 9), 640px);
+  max-width: max(calc((100vh - 44px - 223px - 20px - 52px - 8px) * 16 / 9), 640px);
   background-color: #AEEA94;
   display: flex;
   align-items: center;
@@ -138,8 +138,8 @@ body {
 
 .main-image {
   background-color: #EB5A3C;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   object-fit: contain;
   display: block;
 }
