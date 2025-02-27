@@ -12,11 +12,12 @@
     <div class="container-1">
       <div class="container-2">
         <div class="container-3">
-          <div class="col-1"></div>
+          <!-- <div class="col-1"></div> -->
           <div class="col-2">
             <div class="row-1"></div>
             <div class="row-2">
               <div class="wrapper">
+                <div class="top"></div>
                 <div class="main-wrapper" id="main-wrapper">
                   <img src="image.png" alt="" class="main-image" id="main-image">
                 </div>
@@ -37,12 +38,11 @@
   <script>
     const viewportWidth = document.documentElement.offsetWidth
     const bodyWidth = document.querySelector("body").offsetWidth
-    const col1W = document.querySelector(".col-1").offsetWidth
-    const col2W = document.querySelector(".col-2").offsetWidth
-    const col3W = document.querySelector(".col-3").offsetWidth
+    const col1W = document.querySelector(".col-2").offsetWidth
+    const col2W = document.querySelector(".col-3").offsetWidth
 
     document.getElementById("info1").innerHTML = `Viewport width = ${viewportWidth}px, Body width ${bodyWidth}px`
-    document.getElementById("info2").innerHTML = `col 1, 2, 3 width = ${col1W}px ${col2W}px ${col3W}px`
+    document.getElementById("info2").innerHTML = `col 1, 2 width = ${col1W}px ${col2W}px`
   </script>
 </body>
 </html>
