@@ -53,6 +53,8 @@ body {
   width: 100%;
   min-width: 652px;
   min-height: 190px;
+  flex-grow: 1;
+  flex-shrink: 1;
   flex-direction: column;
   background-color: #756ab6;
 }
