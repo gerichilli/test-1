@@ -57,7 +57,7 @@ body {
 
 .col-2 {
   width: 100%;
-  min-width: 652px;
+  /* min-width: 652px; */
   min-height: 190px;
   display: flex;
   flex-direction: column;

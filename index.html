@@ -36,11 +36,12 @@
   </div>
   <script>
     const viewportWidth = document.documentElement.offsetWidth
-    const col1W = document.querySelector(".col-1").clientWidth
-    const col2W = document.querySelector(".col-2").clientWidth
-    const col3W = document.querySelector(".col-3").clientWidth
+    const bodyWidth = document.querySelector("body").offsetWidth
+    const col1W = document.querySelector(".col-1").offsetWidth
+    const col2W = document.querySelector(".col-2").offsetWidth
+    const col3W = document.querySelector(".col-3").offsetWidth
 
-    document.getElementById("info1").innerHTML = `Viewport width = ${viewportWidth}px`
+    document.getElementById("info1").innerHTML = `Viewport width = ${viewportWidth}px, Body width ${bodyWidth}px`
     document.getElementById("info2").innerHTML = `col 1, 2, 3 width = ${col1W}px ${col2W}px ${col3W}px`
   </script>
 </body>
