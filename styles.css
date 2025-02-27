@@ -6,7 +6,7 @@ body {
 
 body {
   min-height: 707px;
-  min-width: 1080px;
+  min-width: 100%;
   margin: 0;
 }
 
@@ -107,6 +107,7 @@ body {
 .wrapper {
   position: relative;
   display: flex;
+  width: 100%;
   min-width: 648px;
   min-height: 368px;
   flex-basis: auto;
@@ -137,17 +138,13 @@ body {
 
 .main-image {
   background-color: #EB5A3C;
+  position: static;
+  width: unset;
   height: 100%;
   max-width: 100%;
   object-fit: contain;
   display: block;
 }
-
-/* @media (orientation: portrait) {
-  .main-image {
-    width: calc(100% - 8px);
-  }
-} */
 
 .info {
   position: fixed;
