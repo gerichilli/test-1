@@ -4,10 +4,6 @@ body {
   background-color: #222;
 }
 
-html {
-  overflow: hidden;
-}
-
 body {
   min-height: 707px;
   /* min-width: 1080px; */
