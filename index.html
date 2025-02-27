@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Test Vh</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -18,7 +18,6 @@
             <div class="row-2">
               <div class="wrapper">
                 <div class="main-wrapper" id="main-wrapper">
-                  <div class="top"></div>
                   <img src="image.png" alt="" class="main-image" id="main-image">
                 </div>
               </div>  
@@ -30,6 +29,19 @@
       </div>
     </div>
   </div>
-  <div class="info" id="info"></div>
+  <div class="info" id="info">
+    <p id="info1"></p>
+    <p id="info2"></p>
+    <p id="info3"></p>
+  </div>
+  <script>
+    const viewportWidth = document.documentElement.offsetWidth
+    const col1W = document.querySelector(".col-1").clientWidth
+    const col2W = document.querySelector(".col-2").clientWidth
+    const col3W = document.querySelector(".col-3").clientWidth
+
+    document.getElementById("info1").innerHTML = `Viewport width = ${viewportWidth}px`
+    document.getElementById("info2").innerHTML = `col 1, 2, 3 width = ${col1W}px ${col2W}px ${col3W}px`
+  </script>
 </body>
 </html>
