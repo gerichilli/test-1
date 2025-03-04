@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="viewport" content="initial-scale=1.0, viewport-fit=cover">
   <title>Test Vh</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -35,14 +35,14 @@
     <p id="info3"></p>
   </div>
   <script>
-    const viewportWidth = document.documentElement.offsetWidth
+    const viewportWidth = window.innerWidth
+    const viewportHeight = window.innerHeight
     const bodyWidth = document.querySelector("body").offsetWidth
     const col1W = document.querySelector(".col-2").offsetWidth
     const col2W = document.querySelector(".col-3").offsetWidth
 
-    document.getElementById("info1").innerHTML = `Viewport width = ${viewportWidth}px, Body width ${bodyWidth}px`
+    document.getElementById("info1").innerHTML = `Viewport = ${viewportWidth}px x ${viewportHeight}px, Body width ${bodyWidth}px`
     document.getElementById("info2").innerHTML = `col 1, 2 width = ${col1W}px ${col2W}px`
-    document.getElementById("info3").innerHTML = `VisualViewport Scale ${window.visualViewport.scale}`
   </script>
 </body>
 </html>
