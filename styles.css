@@ -4,6 +4,10 @@ body {
   background-color: #222;
 }
 
+html {
+  touch-action: manipulation;
+}
+
 body {
   min-height: 707px;
   min-width: 1080px;
