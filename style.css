@@ -1,0 +1,63 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  font-family: "IBM Plex Mono", monosace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.scroll-box {
+  width: 300px;
+  height: 200px;
+  overflow: scroll;
+  border: 4px solid #ccc;
+  padding: 12px;
+}
+
+.scroll-box {
+  background: linear-gradient(to bottom, #FFC6C6, #FFDBDB);
+  margin: 20px;
+}
+
+.scroll-box.short-content {
+  background: linear-gradient(to bottom, #BEE4D0, #DBFFCB);
+}
+/* 100 vh issues -------------------------- */
+
+/* .hero {
+  height: 100dvh;
+  height: calc(var(--vh, 1vh) * 100);
+  background: linear-gradient(to bottom, #4facfe, #00f2fe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+} */
+
+/* .debug-info {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-family: monospace;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+.debug-info strong {
+  color: yellow;
+} */
+
+/* END 100 vh issues -------------------------- */
